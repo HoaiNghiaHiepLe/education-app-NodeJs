@@ -1,0 +1,28 @@
+{
+  "name": "blog-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoaiNghiaHiepLe/blog-NodeJs.git"
+  },
+  "keywords": [
+    "blog",
+    "nodeJs"
+  ],
+  "author": "Nghia Hiep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoaiNghiaHiepLe/blog-NodeJs/issues"
+  },
+  "homepage": "https://github.com/HoaiNghiaHiepLe/blog-NodeJs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.13"
+  }
+}
