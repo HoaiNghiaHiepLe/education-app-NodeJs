@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "prettier": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "sass": "sass --watch src/resources/scss/app.scss:src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +29,13 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.13",
     "sass": "^1.60.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7"
   }
 }
