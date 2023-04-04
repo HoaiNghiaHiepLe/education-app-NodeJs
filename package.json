@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon --inspect src/index.js",
     "sass": "sass --watch src/resources/scss/app.scss:src/public/css/app.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
