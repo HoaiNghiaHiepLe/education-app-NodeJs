@@ -1,5 +1,9 @@
 @import 'variable.scss';
-
-h1 {
-  color: $red_color;
+.card-course-item {
+  .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }
