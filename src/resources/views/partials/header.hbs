@@ -1,25 +1,7 @@
 <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-  <a class='navbar-brand' href='/'>Node Blog</a>
-  <button
-    class='navbar-toggler'
-    type='button'
-    data-toggle='collapse'
-    data-target='#navbarSupportedContent'
-    aria-controls='navbarSupportedContent'
-    aria-expanded='false'
-    aria-label='Toggle navigation'
-  >
-    <span class='navbar-toggler-icon'></span>
-  </button>
-
-  <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-    <ul class='navbar-nav mr-auto'>
-      <li class='nav-item active'>
-        <a class='nav-link' href='/'>Home <span class='sr-only'>(current)</span></a>
-      </li>
-      <li class='nav-item'>
-        <a class='nav-link' href='/courses/create'>Đăng khoá học</a>
-      </li>
+  <div class='container-fluid'>
+    <a class='navbar-brand' href='/'>Education app</a>
+    <ul class='navbar-nav'>
       <li class='nav-item dropdown'>
         <a
           class='nav-link dropdown-toggle'
@@ -30,22 +12,23 @@
           aria-haspopup='true'
           aria-expanded='false'
         >
-          Dropdown
+          <img
+            class='user_avatar'
+            src='https://hoctapit.com/wp-content/uploads/2018/01/nodejs-logo-e1497443346889.png'
+            alt=''
+          />
+          User's name
         </a>
         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-          <a class='dropdown-item' href='#'>Action</a>
-          <a class='dropdown-item' href='#'>Another action</a>
+          <a class='dropdown-item' href='/courses/create'>Đăng khoá học</a>
           <div class='dropdown-divider'></div>
-          <a class='dropdown-item' href='#'>Something else here</a>
+          <a class='dropdown-item' href='/me/stored/courses'>khoá học của tôi</a>
+          <a class='dropdown-item' href='#'>Bài viết của tôi</a>
+          <div class='dropdown-divider'></div>
+          <a class='dropdown-item' href='#'>Đăng xuất</a>
         </div>
       </li>
-      <li class='nav-item'>
-        <a class='nav-link disabled' href='#'>Disabled</a>
-      </li>
     </ul>
-    <form class='form-inline my-2 my-lg-0'>
-      <input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
-      <button class='btn btn-outline-success my-2 my-sm-0' type='submit'>Search</button>
-    </form>
   </div>
+
 </nav>

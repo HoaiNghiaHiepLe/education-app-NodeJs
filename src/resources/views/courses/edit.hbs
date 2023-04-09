@@ -1,0 +1,51 @@
+<div class="mx-4 my-4">
+  <h3>edit khoá học</h3>
+  <form method="POST" action="/courses/{{course._id}}?_method=PUT">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Tên</label>
+      <input
+        name="name"
+        type="text"
+        class="form-control"
+        id="name"
+        value="{{course.name}}"
+        placeholder="Tên khoá học..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Mô tả</label>
+      <textarea
+        name="description"
+        type="text"
+        class="form-control"
+        id="description"
+        placeholder="Mô tả khoá học..."
+      >
+{{course.description}}</textarea
+      >
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">VideoId</label>
+      <input
+        name="videoId"
+        type="text"
+        class="form-control"
+        id="videoId"
+        value="{{course.videoId}}"
+        placeholder="VideoId..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Level</label>
+      <input
+        name="level"
+        type="text"
+        class="form-control"
+        id="level"
+        value="{{course.level}}"
+        placeholder="level...'"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">save</button>
+  </form>
+</div>
