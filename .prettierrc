@@ -22,8 +22,7 @@
     {
       "files": "*.hbs",
       "options": {
-        "singleQuote": false,
-        "parser": "angular"
+        "parser": "html"
       }
     }
   ]
