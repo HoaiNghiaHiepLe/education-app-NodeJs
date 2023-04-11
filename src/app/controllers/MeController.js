@@ -2,11 +2,12 @@ const Course = require('../models/Course');
 
 class MeController {
   // [GET] /me/stored/courses
+  // how can i use lean() inside Promise.all
   storedCourses(req, res, next) {
-    Course.find({})
-      .lean()
-      .then(courses =>
+    Promise.all([Course.find({}).lean(), Course.countDocumentsDeleted()])
+      .then(([courses, deletedCount]) =>
         res.render('me/stored-courses', {
+          deletedCount,
           courses,
         }),
       )

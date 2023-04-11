@@ -1,7 +1,9 @@
 <div class="mx-4 my-4">
   <div>
     <h1>Khoá học của tôi</h1>
-    <a href="/me/trash/courses">Thùng rác</a>
+    {{#if deletedCount}}
+    <a href="/me/trash/courses">Thùng rác ({{deletedCount}})</a>
+    {{/if}}
   </div>
   <table class="table mt-4">
     <thead>
