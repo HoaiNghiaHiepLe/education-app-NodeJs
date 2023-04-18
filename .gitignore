@@ -1,25 +1,30 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-.env
-src/public/css
-# dependencies
 /node_modules
-/.pnp
-.pnp.js
+/public/hot
+/public/storage
+/storage/*.key
+*/vendor
+/open-iconic-master
+/storage
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
 
-# testing
-/coverage
 
-# production
-/build
-
-# misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+._.DS_Store
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# コンパイルするのでいらない。
+public/css/app.css
+public/js/app.js
+public/js/app.js.map
+public/js/app.js.LICENSE.txt
+
+# phpMyAdminで自動生成されるのでいらない。
+public/phpMyAdmin/tmp/twig/*
