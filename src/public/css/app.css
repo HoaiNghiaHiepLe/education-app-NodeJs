@@ -1,0 +1,14 @@
+.card-course-item .card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.user_avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=app.css.map */
