@@ -11,17 +11,6 @@
     {{/if}}
   </div>
   <div class="mt-4 pl-3 d-flex align-items-center">
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="checkboxAll"
-      />
-      <label class="form-check-label" for="checkboxAll" id="checkboxAll">
-        Chọn tất cả
-      </label>
-    </div>
     <select
       style="width: 12rem"
       class="form-control form-control-sm mx-3"
@@ -38,7 +27,17 @@
   <table class="table mt-4">
     <thead>
       <tr>
-        <th colspan="2" scope="col">Thứ tự</th>
+        <th scope="col">
+          <div class="form-check">
+            <input
+              class=".mr-auto mb-auto m-0"
+              type="checkbox"
+              value=""
+              id="checkboxAll"
+            />
+          </div>
+        </th>
+        <th scope="col">Thứ tự {{{sortable '_id' _sort}}}</th>
         <th scope="col">Tên khoá học {{{sortable 'name' _sort}}}</th>
         <th scope="col">Trình độ {{{sortable 'level' _sort}}}</th>
         <th scope="col" colspan="2">
@@ -52,7 +51,7 @@
         <td>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input .mr-auto mb-auto m-0"
               type="checkbox"
               name="courseIds[]"
               value="{{this._id}}"
